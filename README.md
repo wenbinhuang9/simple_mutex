@@ -35,3 +35,15 @@ lock =RLock()
 lock.acquire()
 lock.release()
 ```
+
+# Peterson algorithm
+Implement a mutex lock based on peterson algorithm
+
+## Code 
+```
+from person_mutex import PetersonMutex
+
+mutex = PetersonMutex()
+mutex.enter_region()
+mutex.leave_region()
+```
